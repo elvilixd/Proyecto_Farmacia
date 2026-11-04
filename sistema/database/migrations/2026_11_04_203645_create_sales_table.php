@@ -17,8 +17,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->decimal('date');
             $table->decimal('total', 10, 2);
-                        $table->decimal('igv', 10, 2);
-
+            $table->decimal('igv', 10, 2);
             $table->timestamps();
         });
     }
