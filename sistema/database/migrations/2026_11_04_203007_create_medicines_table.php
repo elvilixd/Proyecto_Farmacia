@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('medicinas', function (Blueprint $table) {
+        Schema::create('medicines', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->constrained()->restrictOnDelete();
             $table->string('name', 120);
